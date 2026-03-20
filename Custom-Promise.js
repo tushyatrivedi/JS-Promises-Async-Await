@@ -30,6 +30,7 @@ function CustomPromise(executor) {
     } else {
       handlers.push(callback);
     }
+    //to support asynchronus code, this returns a Promise!!
   };
 
   executor(resolve, reject);
